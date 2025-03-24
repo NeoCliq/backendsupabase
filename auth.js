@@ -9,9 +9,9 @@ import {
   onAuthStateChanged,
 } from "firebase/auth";
 
+require("dotenv").config(); // Carrega as variáveis do arquivo .env
 // Configuração do Firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyDtBHKl3Sojr-pNkAbZ1Pfmoy_yveNKNEM",
   authDomain: "neocliq-711cd.firebaseapp.com",
   projectId: "neocliq-711cd",
   storageBucket: "neocliq-711cd.firebasestorage.app",
@@ -19,6 +19,8 @@ const firebaseConfig = {
   appId: "1:216525354752:web:ded201514b57e62a45a5e5",
   measurementId: "G-SJL0W5WV72",
 };
+
+const googleApiKey = process.env.GOOGLE_API_KEY;
 
 // Inicializar o Firebase
 const app = initializeApp(firebaseConfig);
