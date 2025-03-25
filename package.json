@@ -5,17 +5,22 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NeoCliq/neocliq-backend.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NeoCliq/neocliq-backend/issues"
+  },
+  "homepage": "https://github.com/NeoCliq/neocliq-backend#readme",
   "description": "",
   "dependencies": {
-    "bcrypt": "^5.1.1",
+    "@supabase/supabase-js": "^2.49.3",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
-    "express": "^4.21.2",
-    "firebase": "^11.5.0",
-    "firebase-admin": "^13.2.0",
-    "pg": "^8.14.1"
+    "express": "^4.21.2"
   }
 }
